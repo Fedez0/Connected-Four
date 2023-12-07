@@ -1,0 +1,3 @@
+/home/Astro/Scrivania/Connected-Four/build/CMakeFiles/game.dir
+/home/Astro/Scrivania/Connected-Four/build/CMakeFiles/edit_cache.dir
+/home/Astro/Scrivania/Connected-Four/build/CMakeFiles/rebuild_cache.dir
