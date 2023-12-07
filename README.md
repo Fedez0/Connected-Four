@@ -12,20 +12,21 @@ Forza Quattro è un classico gioco da tavolo in cui due giocatori si sfidano cer
 2. Clona questo repository:
 
     ```bash
-    git clone https://github.com/tuonome/forza-quattro-cpp-sfml.git
-    cd forza-quattro-cpp-sfml
+    git clone https://github.com/Fedez0/Connected-Four.git
+    cd Connected-Four
     ```
 
 3. Compila il gioco utilizzando un compilatore C++ che supporta almeno C++11. Esempio con g++:
 
     ```bash
-    g++ -std=c++11 -o forza_quattro main.cpp -lsfml-graphics -lsfml-window -lsfml-system
+    cd build
+    make 
     ```
 
 4. Esegui il gioco:
 
     ```bash
-    ./forza_quattro
+    ./game
     ```
 
 ## Comandi di Gioco
