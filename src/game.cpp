@@ -3,7 +3,9 @@
 using namespace sf;
 using namespace std;
 
+#define FRAMERATE 60
 
+const Color backGround(113,117,114);
 const Vector2i dimAreaGioco(7,6);
 
 const VideoMode dimFrame(720,480); 
@@ -28,10 +30,12 @@ class Board{
         }
     }
 };
+void init(RenderWindow &window);
 int main(){
     RenderWindow window(dimFrame,"Connected Four");
     Board board; 
     board.print();
+    init(window);
     while (window.isOpen())
     {
         sf::Event event;
@@ -40,9 +44,16 @@ int main(){
             if (event.type == sf::Event::Closed)
                 window.close();
         }
+        window.clear(backGround);
+
+
+
 
         window.display();
     }
 
     return 0;
+}
+void init(RenderWindow &window){
+    window.setFramerateLimit(FRAMERATE);
 }
